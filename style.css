@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    /* background-color:blue; */
+    margin: 0 auto;;
+    padding-left: 2rem
+}
+
+.main{
+    margin-top: 100px;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+.main .hero-image{
+    border: 2px solid green;
+    margin: 20px 10px;
+}
+.main .input-field{
+    border: 2px solid yellow;
+    margin: 20px 10px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
